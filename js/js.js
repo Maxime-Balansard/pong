@@ -1,5 +1,5 @@
 
-
+/** on fait ce deplacer la balle */
 let largeur=$("#balle").width();
 let gauche=parseInt($("#balle").css("left"));
 let haut=parseInt($("#balle").css("top"));
