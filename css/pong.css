@@ -1,0 +1,27 @@
+body{
+     /** on modifie le fond, la couleur, la typo, ect....**/
+     background-color: black;
+     color: #ffffff;
+     font-family: monospace;
+
+}
+/**on desine le rectangle ou la balle va rebondir**/
+#terrain{
+     border: 1px solid white;
+     position: relative;
+
+     width: 800px ;
+     height: 400px ;
+     
+}
+/**on dessine la balle**/
+#balle{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 20px;
+     height: 20px;
+     background-color: white;
+     border-radius: 100px;
+
+}
