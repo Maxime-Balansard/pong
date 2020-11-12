@@ -1,16 +1,25 @@
 <html>
+
     <head>
         <!--on appel la page de style puis, on ecrit le titre "pong"-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
         <link rel="stylesheet" href="css/pong.css">
         <title> pong</title>
     </head>
+
     <body>
-        <!--#on affiche le "terrain" et la "balle"-->
+        <!-- on affiche le "terrain" et la "balle"-->
         <div id="terrain">
             <div id="balle"></div>
+            <div class="raquette" id="raquette1"></div>
+            <div class="raquette" id="raquette2"></div>
         </div>
-        <!-- on apppel le code qu'on à fait en java-->
-        <script src="js/js.js"></script>
+    
     </body>
+      <!-- on apppel le code qu'on à fait en java-->
+      <script src="js/Balle.js"></script>
+      <script src="js/Terrain.js"></script>
+      <script src="js/Raquette.js"></script>
+      <script src="js/pong.js"></script>
+
 </html>
