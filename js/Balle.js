@@ -4,10 +4,10 @@ class Balle {
         this.$html = $html;
         this.haut = parseInt($html.css("top"));
         this.gauche = parseInt($html.css("left"));
-        this.vitesseX=2;
+        this.vitesseX=3;
         this.vitesseY=0.1;
         this.diametre=$html.height()
-
+        this.direction = 1;
     }
     majHTML(){
         this.$html.css("left", this.gauche);

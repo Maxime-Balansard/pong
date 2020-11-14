@@ -4,6 +4,5 @@ class Terrain {
         this.$element = $element;
         this.largeur = $element.width();
         this.hauteur = $element.height();
-    }
-    
+    }    
 }

@@ -18,7 +18,10 @@ body{
      position: relative;
      width: 800px ;
      height: 400px ;
-     
+     /** on "cache les bords droit et gauche**/
+     border-left: black;
+     border-right: black;
+         
 }
 /**on dessine la balle**/
 #balle{
@@ -29,8 +32,8 @@ body{
      height: 20px;
      background-color: white;
      border-radius: 100px;
-
 }
+/** on dessine la raquette**/
 .raquette{
   --hauteur: 25%;
   position: absolute;
@@ -43,4 +46,3 @@ body{
 #raquette2{
      right : 0 ;
 }
-
