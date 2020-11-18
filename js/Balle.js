@@ -13,5 +13,6 @@ class Balle {
         this.$html.css("left", this.gauche);
         this.$html.css("top", this.haut);
     }
+    
 }
 
