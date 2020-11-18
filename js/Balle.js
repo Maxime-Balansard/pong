@@ -7,12 +7,37 @@ class Balle {
         this.vitesseX=3;
         this.vitesseY=0.1;
         this.diametre=$html.height()
-        this.direction = 1;
+
     }
     majHTML(){
         this.$html.css("left", this.gauche);
         this.$html.css("top", this.haut);
     }
-    
-}
+    bouge(){
+        /** on soustrait la diametre de la balle pour avoir un meilleur rebond (plus juste) */
+        if (this.gauche > terrain.largeur - this.diametre) {
+            this.gauche = terrain.largeur - this.diametre;
+            this.vitesseX = this.vitesseX*-1;
+        }
+
+        if (this.gauche <0 ) {
+            this.gauche = 0;
+            this.vitesseX = this.vitesseX*-1;
+        }
+        if (this.haut > terrain.hauteur - this.diametre) {
+            this.haut = terrain.hauteur-this.diametre;
+            this.vitesseY = this.vitesseY*-1;
+
+        }
+        if (this.haut <0 ) {
+            this.haut = 0;
+            this.vitesseY = this.vitesseY*-1;
+        }
+
+
+    }
+
+    }
+
+
 
