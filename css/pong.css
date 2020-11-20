@@ -42,7 +42,9 @@ body{
   width: 10px;
   background-color: #ffffff;
 }
-
+#raquette1{
+     left : 0 ;
+}
 #raquette2{
      right : 0 ;
 }
