@@ -1,3 +1,4 @@
+/** on cre des raquette sur lesquelles la balle va rebondir  */
 class Raquette {
     constructor($element) {
         this.$element = $element;
