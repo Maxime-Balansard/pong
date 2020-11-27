@@ -60,6 +60,7 @@ class Balle {
            if ((this.droite) > terrain.largeur) {
             this.droite = terrain.largeur;
             this.vitesseX *= -1;
+            /**terrain.tiltDroite();*/
             this.centre();
             
         }
@@ -67,6 +68,7 @@ class Balle {
         if (this.posX < 0) {
             this.posX = 0;
             this.vitesseX *= -1;
+            /**terrain.tiltGauche();*/
             this.centre();
         }
         //bas
@@ -93,6 +95,7 @@ class Balle {
               if(this.posY <raquette1.bas){ // et si la balle est plus haute que le bas de la raquette
                 this.vitesseX *= -1
                 this.accelere();
+                
 
               }
             }
